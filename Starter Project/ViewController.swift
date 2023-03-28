@@ -19,7 +19,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        retrievePictures()
+        retrievePictures {
+            
+            print("Success loading the albums")
+            self.albumsTableView.reloadData()
+        } onFailure: {
+            self.albumsTableView.reloadData()
+        }
+        
         albumsTableView.register(UINib(nibName: albumCellId, bundle: nil), forCellReuseIdentifier: albumCellId)
         albumsTableView.delegate = self
         albumsTableView.dataSource = self
@@ -42,8 +49,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         debugPrint("clicked Row: \(indexPath.row)")
     }
     
-    func retrievePictures() {
-        self.albumsList = DataMock.dummyAlbums
-        debugPrint("loaded pictures succcessfully from mock")
+    func retrievePictures(completed: @escaping () -> (), onFailure: @escaping () -> ()) {
+        let url = URL(string: "https://api.unsplash.com/photos/?client_id=Ahj-66mbyiRNL-GhTltHoIgGfkznNgv7SALhCOTLMaM")
+        
+        URLSession.shared.dataTask(with: url!) { data, response, error in
+            if error == nil {
+                do {
+                    self.albumsList = try JSONDecoder().decode([AlbumModel].self, from: data!)
+                    DispatchQueue.main.async { completed() }
+                } catch {
+                    print("error fetching the data from the server")
+                    print("showing mock data")
+                    self.albumsList = DataMock.albums
+                    DispatchQueue.main.async { onFailure() }
+                }
+            }
+        }.resume()
     }
 }

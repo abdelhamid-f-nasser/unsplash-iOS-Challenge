@@ -13,6 +13,7 @@
 		02948DF529CFC76D00F82F28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02948DF329CFC76D00F82F28 /* Main.storyboard */; };
 		02948DF729CFC76E00F82F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02948DF629CFC76E00F82F28 /* Assets.xcassets */; };
 		02948DFA29CFC76E00F82F28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02948DF829CFC76E00F82F28 /* LaunchScreen.storyboard */; };
+		2005F45529D3A11D00E4A405 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005F45429D3A11D00E4A405 /* UIImageViewExtensions.swift */; };
 		209B08C929D3760700865D82 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B08C729D3760700865D82 /* AlbumTableViewCell.swift */; };
 		209B08CA29D3760700865D82 /* AlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209B08C829D3760700865D82 /* AlbumTableViewCell.xib */; };
 		209B08CC29D376BC00865D82 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B08CB29D376BC00865D82 /* AlbumModel.swift */; };
@@ -28,6 +29,7 @@
 		02948DF629CFC76E00F82F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02948DF929CFC76E00F82F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02948DFB29CFC76E00F82F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2005F45429D3A11D00E4A405 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		209B08C729D3760700865D82 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
 		209B08C829D3760700865D82 /* AlbumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTableViewCell.xib; sourceTree = "<group>"; };
 		209B08CB29D376BC00865D82 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				209B08D129D38DB800865D82 /* DataMock.swift */,
+				2005F45429D3A11D00E4A405 /* UIImageViewExtensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2005F45529D3A11D00E4A405 /* UIImageViewExtensions.swift in Sources */,
 				02948DF229CFC76D00F82F28 /* ViewController.swift in Sources */,
 				209B08CC29D376BC00865D82 /* AlbumModel.swift in Sources */,
 				02948DEE29CFC76D00F82F28 /* AppDelegate.swift in Sources */,

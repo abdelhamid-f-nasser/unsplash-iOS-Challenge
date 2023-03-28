@@ -20,7 +20,7 @@ class AlbumTableViewCell: UITableViewCell {
         guard let url = URL(string: imageUrl) else {
             return
         }
-        debugPrint("url: \(url)")
+        albumImageView.load(url: url)
     }
     
 }
