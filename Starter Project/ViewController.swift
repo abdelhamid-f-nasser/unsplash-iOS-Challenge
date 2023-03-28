@@ -18,9 +18,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         retrievePictures {
-            
             print("Success loading the albums")
             self.albumsTableView.reloadData()
         } onFailure: {
@@ -47,6 +45,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         debugPrint("clicked Row: \(indexPath.row)")
+        let selectedAlbum = albumsList[indexPath.row]
+        
+        navigateToFullScreenImageViewController(selectedAlbum)
     }
     
     func retrievePictures(completed: @escaping () -> (), onFailure: @escaping () -> ()) {
@@ -65,5 +66,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 }
             }
         }.resume()
+    }
+
+
+    //MARK: - Navigation -
+    
+    func navigateToFullScreenImageViewController(_ selectedAlbum: AlbumModel) {
+        let destinationViewController = self.storyboard?.instantiateViewController(withIdentifier: "FullScreenImageViewController") as! FullScreenImageViewController
+        
+        destinationViewController.imageUrl = selectedAlbum.urls.regular
+        
+        self.navigationController?.pushViewController(destinationViewController, animated: true)
     }
 }
