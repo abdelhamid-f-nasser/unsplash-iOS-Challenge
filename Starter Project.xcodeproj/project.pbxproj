@@ -13,6 +13,10 @@
 		02948DF529CFC76D00F82F28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02948DF329CFC76D00F82F28 /* Main.storyboard */; };
 		02948DF729CFC76E00F82F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02948DF629CFC76E00F82F28 /* Assets.xcassets */; };
 		02948DFA29CFC76E00F82F28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02948DF829CFC76E00F82F28 /* LaunchScreen.storyboard */; };
+		209B08C929D3760700865D82 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B08C729D3760700865D82 /* AlbumTableViewCell.swift */; };
+		209B08CA29D3760700865D82 /* AlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209B08C829D3760700865D82 /* AlbumTableViewCell.xib */; };
+		209B08CC29D376BC00865D82 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B08CB29D376BC00865D82 /* AlbumModel.swift */; };
+		209B08D229D38DB800865D82 /* DataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B08D129D38DB800865D82 /* DataMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		02948DF629CFC76E00F82F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02948DF929CFC76E00F82F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02948DFB29CFC76E00F82F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209B08C729D3760700865D82 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		209B08C829D3760700865D82 /* AlbumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTableViewCell.xib; sourceTree = "<group>"; };
+		209B08CB29D376BC00865D82 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		209B08D129D38DB800865D82 /* DataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		02948DEC29CFC76D00F82F28 /* Starter Project */ = {
 			isa = PBXGroup;
 			children = (
+				209B08D329D3934200865D82 /* Models */,
+				209B08D029D38BAE00865D82 /* Cells */,
+				209B08CD29D38B8000865D82 /* Utils */,
 				02948DED29CFC76D00F82F28 /* AppDelegate.swift */,
 				02948DEF29CFC76D00F82F28 /* SceneDelegate.swift */,
 				02948DF129CFC76D00F82F28 /* ViewController.swift */,
@@ -65,6 +76,31 @@
 				02948DFB29CFC76E00F82F28 /* Info.plist */,
 			);
 			path = "Starter Project";
+			sourceTree = "<group>";
+		};
+		209B08CD29D38B8000865D82 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				209B08D129D38DB800865D82 /* DataMock.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		209B08D029D38BAE00865D82 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				209B08C729D3760700865D82 /* AlbumTableViewCell.swift */,
+				209B08C829D3760700865D82 /* AlbumTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		209B08D329D3934200865D82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				209B08CB29D376BC00865D82 /* AlbumModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +164,7 @@
 				02948DFA29CFC76E00F82F28 /* LaunchScreen.storyboard in Resources */,
 				02948DF729CFC76E00F82F28 /* Assets.xcassets in Resources */,
 				02948DF529CFC76D00F82F28 /* Main.storyboard in Resources */,
+				209B08CA29D3760700865D82 /* AlbumTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				02948DF229CFC76D00F82F28 /* ViewController.swift in Sources */,
+				209B08CC29D376BC00865D82 /* AlbumModel.swift in Sources */,
 				02948DEE29CFC76D00F82F28 /* AppDelegate.swift in Sources */,
 				02948DF029CFC76D00F82F28 /* SceneDelegate.swift in Sources */,
+				209B08C929D3760700865D82 /* AlbumTableViewCell.swift in Sources */,
+				209B08D229D38DB800865D82 /* DataMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
