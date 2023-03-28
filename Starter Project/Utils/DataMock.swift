@@ -12,10 +12,13 @@ import Foundation
 /// used in initial development and when data retrieval fails
 struct DataMock {
     
-    static let dummyAlbums = [
-        AlbumModel(urls: Urls(regular: #"https://images.unsplash.com/photo-1679678691002-cca4ae795169?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=Mnw0MjczNTd8MXwxfGFsbHwxfHx8fHx8Mnx8MTY4MDAzMDgwNg\u0026ixlib=rb-4.0.3\u0026q=80\u0026w=1080"#)),
-        AlbumModel(urls: Urls(regular: #"https://images.unsplash.com/photo-1679941279735-b3b35e8bc476?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjczNTd8MHwxfGFsbHw4fHx8fHx8Mnx8MTY4MDAzMDgwNg&ixlib=rb-4.0.3&q=80&w=1080"#)),
-        AlbumModel(urls: Urls(regular: #"https://images.unsplash.com/photo-1679913155425-e14172174fcc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjczNTd8MHwxfGFsbHw5fHx8fHx8Mnx8MTY4MDAzMDgwNg&ixlib=rb-4.0.3&q=80&w=1080"#)),
-        AlbumModel(urls: Urls(regular: #"https://images.unsplash.com/photo-1679678691002-cca4ae795169?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=Mnw0MjczNTd8MXwxfGFsbHwxfHx8fHx8Mnx8MTY4MDAzMDgwNg\u0026ixlib=rb-4.0.3\u0026q=80\u0026w=1080"#)),
+    /// Album mocks
+    //MARK: - albums
+    static let albums = [
+        AlbumModel(urls: Urls(regular: #"https://images.unsplash.com/photo-1680001660273-2a78887352a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjczNTd8MHwxfGFsbHwyfHx8fHx8Mnx8MTY4MDAzMDgwNg&ixlib=rb-4.0.3&q=80&w=1080"#)),
+        AlbumModel(urls: Urls(regular: #"https://images.unsplash.com/photo-1680003210401-08fa173ee905?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjczNTd8MHwxfGFsbHw0fHx8fHx8Mnx8MTY4MDAzMDgwNg&ixlib=rb-4.0.3&q=80&w=1080"#)),
+        AlbumModel(urls: Urls(regular: #"https://images.unsplash.com/photo-1679939652241-4679c2125e2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjczNTd8MHwxfGFsbHw3fHx8fHx8Mnx8MTY4MDAzMDgwNg&ixlib=rb-4.0.3&q=80&w=1080"#)),
+        AlbumModel(urls: Urls(regular: #"https://images.unsplash.com/photo-1679948905560-2c06b21d43c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjczNTd8MHwxfGFsbHwxMHx8fHx8fDJ8fDE2ODAwMzA4MDY&ixlib=rb-4.0.3&q=80&w=1080"#)),
+
     ]
 }
